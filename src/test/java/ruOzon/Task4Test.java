@@ -49,7 +49,7 @@ public class Task4Test extends WebDriverSettings{
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-       /* driver.findElement(By.xpath
+        driver.findElement(By.xpath
                 ("//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/div/aside/div[10]/div[2]/div[2]/div[1]/input")).sendKeys("\b\b\b\b\b\b\b");
         driver.findElement(By.cssSelector
                 ("//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/div/aside/div[10]/div[2]/div[2]/div[1]/input")).sendKeys("1000");
@@ -59,7 +59,7 @@ public class Task4Test extends WebDriverSettings{
             Thread.sleep(1500);
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }*/
+        }
        String expectedRez = "Цена: от 3 000 до 4 000";
         String actualRez = driver.findElement(By.xpath("//span[contains(text(),\"Цена\")]")).getText();
         Assert.assertTrue(actualRez.equals(expectedRez));
